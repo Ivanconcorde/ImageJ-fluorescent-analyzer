@@ -34,11 +34,13 @@ run("Create Selection");
 selectImage(file1);
 run("Restore Selection");
 run("Measure");
-saveAs("Results", "E:/Ivan/2025 bio/25.VI.2025/Results/Results "+newname);
-//roiManager("select", array);
-//roiManager("Delete");
+//Insert the path results will be saved to. IMPORTANT use '/' instead of '\' 
+saveAs("Results", "E:/User/your directory/Results "+newname);
 run("Clear Results");
 selectImage(file1);
 run("Close");
+//Un-comment the following lines, if you want close the image and clear the roiManager immediatly after the completion of the script
+//roiManager("select", array);
+//roiManager("Delete");
 //selectImage(file2+"-1.tif");
 //run("Close");
